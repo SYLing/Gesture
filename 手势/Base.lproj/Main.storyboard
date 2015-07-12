@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2043" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tnd-a5-2vo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="CG4-mX-acP">
+            <objects>
+                <navigationController id="Tnd-a5-2vo" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="veO-rz-D20">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lV4-Eh-e0k" kind="relationship" relationship="rootViewController" id="uHy-Dz-75L"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfe-T9-t2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199.5" y="260.5"/>
+        </scene>
+        <!--Select View Controller-->
+        <scene sceneID="ZdQ-qm-Cdq">
+            <objects>
+                <viewController id="lV4-Eh-e0k" customClass="YLSelectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FEC-XF-EXf"/>
+                        <viewControllerLayoutGuide type="bottom" id="TaR-lv-Txm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6zS-2Q-9l2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVD-1i-hYJ">
+                                <rect key="frame" x="142" y="160" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.21703815489687339" green="1" blue="0.37811586868639602" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="拉伸">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select:" destination="lV4-Eh-e0k" eventType="touchUpInside" id="IIB-MZ-skG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYD-gN-KOv">
+                                <rect key="frame" x="142" y="290" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.2170381549" green="1" blue="0.37811586870000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="轻扫">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select:" destination="lV4-Eh-e0k" eventType="touchUpInside" id="Hs2-fO-XrB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lH3-JY-ta8">
+                                <rect key="frame" x="142" y="350" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.2170381549" green="1" blue="0.37811586870000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="拖拽">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select:" destination="lV4-Eh-e0k" eventType="touchUpInside" id="Vyu-p5-05g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoH-xw-bgw">
+                                <rect key="frame" x="142" y="408" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.2170381549" green="1" blue="0.37811586870000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="长按">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select:" destination="lV4-Eh-e0k" eventType="touchUpInside" id="r7h-yU-Gct"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnq-7E-ua3">
+                                <rect key="frame" x="142" y="96" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.2170381549" green="1" blue="0.37811586870000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="旋转">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select:" destination="lV4-Eh-e0k" eventType="touchUpInside" id="mJ6-aL-zT8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39C-ln-qyR">
+                                <rect key="frame" x="113" y="228" width="148" height="30"/>
+                                <color key="backgroundColor" red="0.2170381549" green="1" blue="0.37811586870000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="旋转和拉伸">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select:" destination="lV4-Eh-e0k" eventType="touchUpInside" id="D9K-7D-2Fg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bft-vH-YWO">
+                                <rect key="frame" x="142" y="466" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.2170381549" green="1" blue="0.37811586870000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="各种搞">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="select:" destination="lV4-Eh-e0k" eventType="touchUpInside" id="c2F-bP-Xeo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ref-i6-Ec9"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="push" identifier="selectGesture" id="6BM-tK-KLv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iVX-e3-pSH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241.5" y="260.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="生日背景" translatesAutoresizingMaskIntoConstraints="NO" id="j99-Nv-omo">
+                                <rect key="frame" x="32" y="120" width="310" height="264"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tRb-Aq-2Ie"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="j99-Nv-omo" id="c1y-iA-VXw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743.5" y="265.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="生日背景" width="1031" height="699"/>
+    </resources>
+</document>
