@@ -5,7 +5,6 @@
 //  Created by 邵银岭 on 15/7/12.
 //  Copyright (c) 2015年 邵银岭. All rights reserved.
 //
-
 #import "ViewController.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+XMG.h"
